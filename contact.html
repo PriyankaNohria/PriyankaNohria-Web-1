@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html><head>
+<title>1710991935</title>
+<style>
+td.d1{
+padding:10px 90px 5px;
+background-color:#f2f2f2;
+}
+input[type=text]
+{
+width=70%;
+font-size:16pt;
+}
+textarea
+{
+font-size:16pt;
+}
+</style>
+</head>
+<body>
+<table>
+<tr>
+<td><img src="C:\Users\HP\Pictures\A28.png" height="600px"/></td>
+<td class="d1">
+<div>
+<p style="font-size:35px; font-family:Arial";>Get In Touch</p>
+<p style="font-size:15px">
+I'm a paragraph. Click here to add your own text and edit me. 
+I’m a great place for you to tell a story and let your users know a little more about you.
+</p>
+<form action="C:\Users\HP\Desktop\project\sub.html" method="post">
+<input type="text" id="u1" name="u1" placeholder="Name" autocomplete="off" required>
+<br>
+<br>
+<input type="text" id="e1" name="e1" placeholder="Email" autocomplete="off" required>
+<br>
+<br>
+<input type="text" id="p1" name="p1" placeholder="Contact No." autocomplete="off" required>
+<br>
+<br>
+<label for="c1"></label>
+<textarea id="e1" name="c1" placeholder="Message" rows="6" cols="21"></textarea>
+<input type="submit" name="submit" onclick="fun()" style="background-color:#00008B; color:white; text-align:center; font-size:20px;">
+</form>
+<p></p>
+<p style="font-size:20px;">Contact No.9988998811</p>
+</div>
+</td>
+</table>
+<script>
+function fun()
+{
+var a=document.getElementById("u1").value;
+var b=document.getElementById("e1").value;
+var c=document.getElementById("p1").value;
+var d=document.getElementById("c1").value;
+if(isEmpty(a,"Enter UserName")&&alpha(a,"Enter valid username"))
+{
+if(isEmpty(b,"Enter EmailId")&&email(b,"Enter valid EmailId"))
+{
+if(isEmpty(c,"Enter Phone No.")&&numeric(c,"Enter valid username"))
+{
+return true;
+}
+else
+{
+return false;
+}
+}
+}
+}
+function isEmpty(ele,msg)
+{
+if(ele.value.length==0)
+{
+alert(msg);
+ele.focus();
+return false;
+}
+else
+{
+return true;
+}
+}
+function alpha(ele,msg)
+{
+var n=/^[a-zA-z]+$/;
+if(ele.value.match(n))
+{
+return true;
+}
+else
+{
+alert(msg);
+ele.focus();
+return false;
+}
+}
+function numeric(ele,msg)
+{
+var n=/^[0-9]+$/;
+if(ele.value.match(n))
+{
+return true;
+}
+else
+{
+alert(msg);
+ele.focus();
+return false;
+}
+}
+function email(ele,msg)
+{
+var ne=/^[\W\-\.\+]+\@[a-zA-Z0-9\.\-]+\.[a-zA-Z0-9]{2,4}$/;
+if(elem.value.match(ne))
+{
+return true;
+}
+else
+{
+alert(helpermsg);
+elem.focus();
+return false;
+}
+}
+</script>
+</body>
+</html>

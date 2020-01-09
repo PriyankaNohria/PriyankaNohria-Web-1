@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>1710991935</title>
+<style>
+body
+{
+background-color:lightgrey;
+font-family: Arial, Helvetica, sans-serif;
+}
+.flip-card
+{
+background-color:transparent;
+width:550px;
+height:300px;
+perspective: 1000px;
+}
+.flip-inner
+{
+position:relative;
+width:500px;
+height:250px;
+text-align:center;
+transition:transform 0.6s;
+transform-style: preserve-3d;
+box-shadow:0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.flip-card:hover .flip-inner
+{
+transform: rotateY(180deg);
+}
+.front, .back
+{
+position:absolute;
+width:500px;
+height:250px;
+backface-visibility:hidden;
+}
+.front
+{
+background-color:#bbb;
+color:black;
+z-index: 2;
+border:2px solid black;
+}
+.back
+{
+background-color:pink;
+z-index: 1;
+transform:rotateY(180deg);
+color:white;
+border:2px solid black;
+}
+p
+{
+font-size:20px;
+}
+a
+{
+text-decoration:none;
+}
+a:link
+{
+text-decoration:none;
+}
+a:visitor
+{
+text-decoration:none;
+}
+a:hover
+{
+text-decoration:none;
+}
+a:active
+{
+text-decoration:none;
+}
+.flip-card
+{
+float:left;
+width:30%;
+margin-top:20px;
+padding:0 70px;
+}
+.d1
+{
+margin-top:50px;
+}
+</style>
+</head>
+<body>
+
+<div class="d1">
+<div class="flip-card">
+<div class="flip-inner">
+<div class="front">
+<a href="C:\Users\HP\Desktop\project\coffee.html">
+<img src="C:\Users\HP\Pictures\CC5.png" width="500px" height="250px"/>
+<p>Coffee is a brewed drink prepared from roasted coffee beans,
+the seeds of berries from certain Coffea species.
+The genus Coffea is native to tropical Africa and Madagascar,
+the Comoros,Mauritius,and Réunion in the Indian Ocean.
+Coffee plants are now cultivated in over 70 countries,
+primarily in the equatorial regions of the Americas,
+Southeast Asia,Indian subcontinent,and Africa.
+</P>
+</a></div>
+<div class="back">
+<a href="C:\Users\HP\Desktop\project\coffee.html">
+<h1 style="font-size:60px;">Welcome To Coffee Cafe</h1>
+</a></div>
+</div></div>
+
+<div class="flip-card">
+<div class="flip-inner">
+<div class="front">
+<a href="C:\Users\HP\Desktop\project\drink.html">
+<img src="C:\Users\HP\Pictures\D4.png" width="500px" height="250px"/>
+<P>
+A soft drink (see terminology for other names) is a drink that typically contains carbonated water 
+(although some lemonades are not carbonated), a sweetener,
+and a natural or artificial flavoring.The sweetener may be a sugar,
+high-fructose corn syrup,fruit juice,a sugar substitute,or some combination of these.
+Soft drinks may also contain caffeine,colorings,preservatives,and/or other ingredients.
+</P>
+</a></div>
+<div class="back">
+<a href="C:\Users\HP\Desktop\project\drink.html">
+<h1 style="font-size:60px;">Welcome To Drinks</h1>
+</a></div>
+</div></div>
+</div>
+
+</body>
+</html>
