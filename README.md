@@ -1,1 +1,1 @@
-# PriyankaNohria-Web-1
+It is static web project 
